@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/0.1.2-preview/CreateUIDefinition.MultiVm.json#",
+  "handler": "Microsoft.Azure.CreateUIDef",
+  "version": "0.1.2-preview",
+  "parameters": {
+    "basics": [
+   
+    ],
+    "steps": [ 
+      {
+        "name": "generalSettings",
+        "label": "General settings",
+        "subLabel": {
+            "preValidation": "Configure the General settings",
+            "postValidation": "Done"
+        },
+        "bladeTitle": "General settings",
+        "elements": [
+          {
+            "name": "general-adminUsername",
+            "type": "Microsoft.Common.TextBox",
+            "label": "d"
+          },
+          {
+            "name": "general-adminPassword",
+            "type": "Microsoft.Common.TextBox",
+            "label": "d2"
+          }
+        ]
+    }
+    ],
+    "outputs": { 
+    }
+  }
+}
